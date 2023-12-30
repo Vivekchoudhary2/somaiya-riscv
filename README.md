@@ -1,1 +1,1 @@
-# somaiya-riscv
+# RISCV
