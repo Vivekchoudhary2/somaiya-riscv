@@ -27,7 +27,7 @@ https://www.virtualbox.org/wiki/Downloads
 <details>
   <summary> Introduction to RISC-V ISA </summary>
 
-  
+  RISC-V Instruction Set Architecture (ISA) is set of instructions which only RISC-V hardware layout understands. Since each layout is designed uniquely one can definetly expect unique instruction set (for e.g- To add two data values the command 'addi rd, rs1, rs2 is used; whereas 8051 microcontroller uses 'add a, b' to add the same two data values.)
 
 
 
