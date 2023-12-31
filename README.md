@@ -41,6 +41,26 @@ https://www.virtualbox.org/wiki/Downloads
   
   3.) Assembler
 
+  ## 1.) Source file 
+  It is set of instructions in human readable format.
+  
+  for e.g- addition of two variables of certain data type is
+          c = a + b
+
+  Examples of source files are: C++, C 
+
+  Machine does not understand that!
+
+  ## 2.) Compiler
+  Compiler converts the source file instructions to mnemonic version of machine code.
+  
+  This mnemonic version of machine code is also known as assembly language.
+  
+  The compiler produces .exe file which consists of all instructions close to machine language.
+
+  ## 3.) Assembler
+  
+
   
 
 
