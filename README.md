@@ -29,7 +29,13 @@ https://www.virtualbox.org/wiki/Downloads
 
   RISC-V Instruction Set Architecture (ISA) is set of instructions which only RISC-V hardware layout understands. Since each layout is designed uniquely one can definetly expect unique instruction set (for e.g- To add two data values the command 'addi rd, rs1, rs2 is used; whereas 8051 microcontroller uses 'add a, b' to add the same two data values.)
 
+  Machine does not understand human language; it only understands 1's and 0's. And humans definitely cannot communicate in 1's and 0's.
+  
+  How humans take aid of machines to do the same task again and again?
 
+  
+
+  
 
 
 
