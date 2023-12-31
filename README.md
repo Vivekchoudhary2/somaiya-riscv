@@ -42,14 +42,10 @@ https://www.virtualbox.org/wiki/Downloads
   5.)Application binary interface
 
   6.)Memory allocation & stack pointer (for e.g- a1, sp, 8)
+</details>
 
- 
-
-  
-
-
-
-
+<details>
+  <summary> Software toolchain </summary>
 
 
 
