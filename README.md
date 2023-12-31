@@ -13,3 +13,16 @@
 - [Word of Thanks](#Word-of-Thanks)
 
 - [Reference](#reference)
+
+# Day 1- Introduction to RISC-V ISA And GNU compiler toolchain
+<details>
+<summary> Installation </summary>
+
+1). Install virtual machine through given link
+```
+https://www.virtualbox.org/wiki/Downloads
+```
+
+Create a new OS with version Ubuntu 18.04 LTS (Bionic Beaver) (64-bit)
+
+
