@@ -59,7 +59,11 @@ https://www.virtualbox.org/wiki/Downloads
   The compiler produces .exe file which consists of all instructions close to machine language.
 
   ## 3.) Assembler
+  Assembler does the job converting mnemonic instructions to binary instructions.
   
+  The output by assembler consists of sequence of 1's and 0's.
+
+  for e.g- GNU 
 
   
 
