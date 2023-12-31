@@ -29,6 +29,20 @@ https://www.virtualbox.org/wiki/Downloads
 
   RISC-V Instruction Set Architecture (ISA) is assembly level language which only RISC-V hardware layout understands. It is designed to communicate instructions with the computer. Since every layout is custom designed one can definetly expect unique instruction set (for e.g- To add two data values the command 'addi rd, rs1, rs2 is used; whereas 8051 microcontroller uses 'add a, b' to add the same two data values.)
 
+  Various instructions in RISC-V are listed below:
+
+  1.)Pseudo instructions (for e.g- mv rd, rs1)
+
+  2.)Base integer instructions(RV64I)(RV32I) (for e.g- addi, lui)
+
+  3.)Multiply extension(RV64M)(RV32M) (for e.g- divw, mulw)
+
+  4.)Single(RV64F) & double(RV64D) precision floating point extension (for e.g- flw, fadd)
+
+  5.)Application binary interface
+
+  6.)Memory allocation & stack pointer (for e.g- a1, sp, 8)
+
  
 
   
