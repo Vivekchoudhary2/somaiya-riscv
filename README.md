@@ -30,3 +30,4 @@ https://www.virtualbox.org/wiki/Downloads
 
 4). Finish the process and start the OS by clicking on the start arrow
 
+![setup_1](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/3e7c71ad-2df4-4869-b790-23a8582c1084)
