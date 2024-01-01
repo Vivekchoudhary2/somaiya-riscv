@@ -93,6 +93,19 @@ To know the details of the file we use the following command:
 ```
 ls -ltr <filename.o>
 ```
+
+To finally look at the assembly level we use the following command:
+
+```
+riscv64-unknown-elf-objdump -d <filename.o>
+```
+
+The '-d' stands for disassemble the object file suffixed afterwards.
+
+Here is the behind the scenes of the computer executing the provided C program with 'main' function.
+
+![program-3](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/003ca669-55af-4998-9f66-56a2b4c1309e)
   
 </details>
+
 
