@@ -47,6 +47,28 @@ https://www.virtualbox.org/wiki/Downloads
 <details>
   <summary> Software toolchain </summary>
 
+  To start with 1st lab, we write a simple C program in Ubuntu v18.04 text editor. 
+
+  Following is the C program:
+
+  ```
+#include <stdio.h>
+int main()
+{
+  int n=5, y=0, i;
+
+  for (i=0; i<=n; i++)
+  {
+    y = y + i;
+  }
+  printf("Required sum is: ", y);
+  return 0;
+}
+  ```
+On executing the program, we get the desired result.
+
+![program-1](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/156b68c6-cf2b-4e82-8383-f11c86921470)
+
 
 
   
