@@ -104,7 +104,25 @@ The '-d' stands for disassemble the object file suffixed afterwards.
 
 Here is the behind the scenes of the computer executing the provided C program with 'main' function.
 
+The command for that is:
+
+```
+riscv64-unknown-elf-objdump <object file> -d <object filename.o> | less
+/main
+n
+```
+
 ![program-3](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/003ca669-55af-4998-9f66-56a2b4c1309e)
+
+If we were try to figure out number of instructions, it turns out to be
+```
+(10204 - 10184)/4 = 20 instructions
+```
+### Spike simulation and debug
+
+
+
+
   
 </details>
 
