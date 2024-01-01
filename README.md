@@ -69,7 +69,30 @@ On executing the program, we get the desired result.
 
 ![program-1](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/156b68c6-cf2b-4e82-8383-f11c86921470)
 
+In the above exapmle we ran the code through Windows compiler. 
 
+Now we try to run the same program through RISC-V compiler and try to dive deep till assembly language of RISC-V. 
 
+We do that by using the following command:
+
+```
+riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64 -o <filename.o> <filename.c>
+```
+On executing the above command, the OS generates an object file(.o).
+
+![program-2](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/90888fe3-081c-4e66-b63e-deb366f661f0)
+
+The next job is of the linker which combines all the various object files and outputs a single executable file.
+
+The input to linker in an object file.
+
+The output is an single executable file.
+
+To know the details of the file we use the following command:
+
+```
+ls -ltr <filename.o>
+```
   
 </details>
+
