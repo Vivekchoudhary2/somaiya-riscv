@@ -283,7 +283,7 @@ The ABI names of the registersand their respective functionalities which can acc
 ![progrma-8](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/7452e235-ea7e-465a-b196-f6341a633714)
 
     
-We start by implementing C code.
+We start by implementing the following C code.
 
 ![program_10](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/3ed5f6f4-ea8f-49d9-bcbc-5ab4cd754bbc)
 
