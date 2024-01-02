@@ -75,7 +75,7 @@ Now we try to run the same program through RISC-V compiler and try to dive deep 
 We do that by using the following command:
 
 ```
-riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64 -o <filename.o> <filename.c>
+riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o <filename.o> <filename.c>
 ```
 On executing the above command, the OS generates an object file(.o).
 
