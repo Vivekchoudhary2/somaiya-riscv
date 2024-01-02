@@ -128,3 +128,42 @@ If we were try to figure out number of instructions, it turns out to be
 </details>
 
 
+# Day 2- Introduction to Application Binary Interface And Basic error flow
+<details>
+  <summary> What is Application binary interface? </summary>
+  When the application program accesses the hardware resources through system call process; the way all this works is called the application binary interface.
+
+  What is system call?
+
+  System call is an application trying to directly interact with hardware system.
+
+  This is called the application binary interface.
+
+  One interesting feature of the system call is called the "Kernel mode", wherein the program has access to all system resources, including hardware, memory
+
+  For certain application, if the user wants to access the hardware resources; it does so through registers.
+
+  For that purpose one must understand the architecture of the registers.(For e.g- length of register= 4bit, 8bit and so on)
+
+  * In RISC V architecture, the width of the register is defined as XLEN. For RV64 and RV32, the widths are 64 bits and 32 bits, respectively.
+
+  * RISC V belongs to the little endian memory addressing system, which means that the least significant byte of a word is stored in the smallest memory address.
+
+  ### Registers in RISC-V
+
+  * How do we use ABI to access the hardware resources?
+
+    Registers are a type of memory built directly into the processor or CPU that is used to store and manipulate data during the execution of instructions. A register may         hold an instruction, a storage address, or any kind of data (such as a bit sequence or individual characters).
+
+    In RISC-V, the width of register is 64-bit for 64-bit architecture(RV-64) and 32-bit for 32-bit architecture(RV-32)
+
+For a certain 64-bit data, the data can either be directly loaded into 64-bit register or it can be loaded through the memory matrix.
+
+When in the case of loading data through memory, memory addressing system is to be known first hand for orderly extraction and storing of data.
+
+* There are 2 types of memory addressing system:
+    -  Little endian - least significant byte of a word is stored in the smallest 				memory address.
+    -  Big endian - most significant byte of a word is stored in the smallest 				memory address
+    
+
+</details>
