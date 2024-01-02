@@ -167,9 +167,50 @@ When in the case of loading data through memory, memory addressing system is to 
 
   * We make use of certain ISA RISC-V instruction set to perform operations on data bits.
  
-# Load, Add and Store Instructions
+# Load, Add and Store Instructions with examples
+```
+ld x8 16(x23)
+```
+Here 'ld' stands for load doubleword,x8 shows destination register (rd),16 is offset,x23 is source register. This is I type Instructions: 
 
+![program-4](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/151c641e-b4dc-4aad-b12a-fc04c92245a6)
 
+The offset value is difference value required to reach the desired address.
 
+```
+ add x8,x29,x8
+```
+Here add is function,x8 is destination register (rd),x29 & x8 is source register. This is R type Instructions: 
+
+![program-5](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/1f0c8668-709e-4a68-9412-eaa81606a581)
+
+``` 
+sd x8,8(x23)
+```
+Here store is store doubleword,x8 is data registers,8 tell offset(immediate) ,x23 is source register. This is S type Instructions: 
+
+![program-6](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/2f858320-229a-4d80-aca9-8b46f6cb2f5b)
+
+The ABI names of the registersand their respective functionalities which can accessed by the user through system call are listed below:
+
+![program-7](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/052e93e4-ce7a-4844-b38e-46222b0b3b89)
 
 </details>
+<details>
+  <summary> Labwork using ABI function calls </summary>
+  In this lab, we take aid of the ABI interface to implement a simple algorithm of adding       numbers from 1 to n.
+
+  An interesting thing about this lab is that we, will be explicitly interacting with the       hardware.
+
+  The algorithm for the program is as follows:
+
+  
+![progrma-8](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/7452e235-ea7e-465a-b196-f6341a633714)
+
+    
+
+
+
+  
+</details>
+
