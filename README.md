@@ -119,12 +119,87 @@ If we were try to figure out number of instructions, it turns out to be
 ```
 (10204 - 10184)/4 = 20 instructions
 ```
+  
+</details>
+
+<details>
+  <summary> Number system in RISC-V </summary>
+
+  RISC-V operates on binary as well as hexadecimal number system.
+
+  Binary number system: It allows only 2 symbols(0 and 1) to convey information. 
+  
+  For e.g- 1001 are 4 bits.
+
+  Decimal equivalent = 1*(2^3) + 0*(2^2) + 0*(2^1) + 1*(2^0) = 9
+
+  Hexadecimal number system: It allows 16 symbols to convey information. 4 bits together represent a single symbol.
 
 
+  For e.g- 110110101111 is same as DAF.
+  
+  Information content is same but representaion changes.
 
+* Some key terms which will be helpful to know:
 
+  * bit - A bit is the smallest unit of data in computing. It can represent one of two values: 0 or 1
+
+  * byte -  A byte is a group of 8 bits
+
+  * word - A word is group of 32 bits
+
+  * double word - A double word is group of 64 bits
+
+![program-8](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/6c722045-069f-46e1-a762-052dc973e297)
 
   
+</details>
+<details> 
+  <summary>Lab on signed and unsigned integers</summary>
+
+  Signed and unsigned integers are two ways of representing whole numbers (integers) in computer programming. The key difference between them lies in how they handle the representation of positive and negative values
+
+  ### Signed Integers:
+  *  Range: Signed integers can represent both positive and negative values.
+
+  *  Representation: In a signed integer representation, most significant bit is used to indicate the sign (positive or negative), and the remaining bits represent the magnitude of the number using two's complement or sign-magnitude representation
+
+  *  For e.g- In a 32-bit signed integer, you might have values ranging from -2,147,483,648 to 2,147,483,647
+
+To find the negative number: We do so through 2's complement method
+
+*  Find binary equivalent of given number
+
+*  Find 1's complement(invert individual bits)
+
+*  Then we add 1 to the LSB of the bit sequence to get result
+
+![download](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/55ea4bfd-bdfc-46e4-a328-89e5d3c2c71c)
+
+### Unsigned Integers:
+  *  Range: Unsigned integers represent only non-negative values (zero and positive)
+
+  *  Representation: All bits are used to represent the magnitude of the number
+
+  *  For e.g- In a 32-bit unsigned integer, you might have values ranging from 0 to 4,294,967,295
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
 </details>
 
 
