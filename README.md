@@ -151,11 +151,9 @@ If we were try to figure out number of instructions, it turns out to be
 
   ### Registers in RISC-V
 
-  * How do we use ABI to access the hardware resources?
+  Registers are a type of memory built directly into the processor or CPU that is used to       store and manipulate data during the execution of instructions. A register may hold an        instruction, a storage address, or any kind of data (such as a bit sequence or individual     characters).
 
-    Registers are a type of memory built directly into the processor or CPU that is used to store and manipulate data during the execution of instructions. A register may         hold an instruction, a storage address, or any kind of data (such as a bit sequence or individual characters).
-
-    In RISC-V, the width of register is 64-bit for 64-bit architecture(RV-64) and 32-bit for 32-bit architecture(RV-32)
+  In RISC-V, the width of register is 64-bit for 64-bit architecture(RV-64) and 32-bit for      32- bit architecture(RV-32)
 
 For a certain 64-bit data, the data can either be directly loaded into 64-bit register or it can be loaded through the memory matrix.
 
@@ -165,5 +163,7 @@ When in the case of loading data through memory, memory addressing system is to 
     -  Little endian - least significant byte of a word is stored in the smallest 				memory address.
     -  Big endian - most significant byte of a word is stored in the smallest 				memory address
     
+
+
 
 </details>
