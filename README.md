@@ -2,7 +2,6 @@
 
 - [Day 1-Introduction to RISC-V ISA And GNU compiler toolchain ](#Day1--Introduction-to-RISC-V-ISA-And-GNU-compiler-toolchain)
 
-- [Day 2-Introduction to Application Binary Interface And Basic Error Flow](#Day2--Introduction-to-Application-Binary-Interface-And-Basic-error-flow)
 
 # Day 1- Introduction to RISC-V ISA And GNU compiler toolchain
 <details>
@@ -118,7 +117,7 @@ If we were try to figure out number of instructions, it turns out to be
 ```
 (10204 - 10184)/4 = 20 instructions
 ```
-### Spike simulation and debug
+
 
 
 
