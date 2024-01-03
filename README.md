@@ -285,6 +285,19 @@ The ABI names of the registersand their respective functionalities which can acc
     
 We start by implementing the following C code.
 
+```
+#include <stdio.h>
+
+extern int load(int x, int y)
+
+int main(){
+  int result = 0;
+  int count = 9;
+  result = load(0x0, count+1);
+  printf("Sum of numbers 0 to %d is %d ", count, result);
+}
+```
+
 ![program_10](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/3ed5f6f4-ea8f-49d9-bcbc-5ab4cd754bbc)
 
 
