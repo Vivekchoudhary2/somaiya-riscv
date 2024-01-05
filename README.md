@@ -220,7 +220,7 @@ To find the negative number: We do so through 2's complement method
 
   *  For e.g- In a 32-bit unsigned integer, you might have values ranging from 0 to 4,294,967,295
 
-The highest integer number in 64-bit OS that can be obtained is 1,84,46,74,40,73,70,95,51,615.
+The highest unsigned integer number in 64-bit OS that can be obtained is 1,84,46,74,40,73,70,95,51,615.
 *  How?
     *  The highest number is obtained when all the bits in 64-bit sequence are set to 1. The decimal equivalent turns out to be (2^(64)-1) = 1,84,46,74,40,73,70,95,51,615
  
@@ -257,20 +257,68 @@ On increasing the exponent value (number of bit), we get the following result:
 
 The result is same as the is OS is 64-bit.
 
-Hence, 1,84,46,74,40,73,70,95,51,615 is the maximum integer value that can be expressed using 64-bit system.
+Hence, 1,84,46,74,40,73,70,95,51,615 is the maximum unsigned integer value that can be expressed using 64-bit system.
+
+*  For maximum signed integers
+    
+    *    To get maximum and minimum signed integers, we implement following C code:
+ 
+      ```
+      #include <stdio.h>
+      #include <math.h>
+      int main()
+      {
+          long long int max = (long long int) (pow(2,63)-1);
+          long long int min = (long long int) (pow(2,63)*-1);
+          printf("Highest signed number: %lld\n", max);
+          printf("Highest signed number: %lld\n", max);
+          return 0;
+      }
+      ```
+      *  Results:
+ 
+  ![program 17](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/41f46020-ea0b-48ff-bc97-72291f88559f)
+
+</details>
+
+<details>
+  <summary>Quiz on signed integers</summary>
+  For the code as shown below, we won't get the actual maximum and minimum value of signed integers because 'int' is 31 bit and therefore its range is '-2,14,74,83,648 to 2,14,74,83,647' even though the container is 64-bit long.(long long int is 64-bit data)
 
 
+```     
+      #include <stdio.h>
+      #include <math.h>
+      int main()
+      {
+          long long int max = (int) (pow(2,63)-1);
+          long long int min = (int) (pow(2,63)*-1);
+          printf("Highest signed number: %lld\n", max);
+          printf("Highest signed number: %lld\n", max);
+          return 0;
+      }
+```  
     
 
 
+![program 18](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/c7ea6243-2aeb-476b-ad1e-7be771e23b78)
 
+When made the appropiate corrections, the code works as expected.
 
+```
+#include <stdio.h>
+      #include <math.h>
+      int main()
+      {
+          long long int max = (long long int) (pow(2,63)-1);
+          long long int min = (long long int) (pow(2,63)*-1);
+          printf("Highest signed number: %lld\n", max);
+          printf("Highest signed number: %lld\n", max);
+          return 0;
+      }
+```
 
-
-
-
-
-
+![program 19](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/af04788f-ffbf-401f-9bae-d0735dadf3f0)
 
 </details>
 
