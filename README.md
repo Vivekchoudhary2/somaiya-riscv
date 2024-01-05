@@ -283,8 +283,21 @@ The ABI names of the registersand their respective functionalities which can acc
 ![progrma-8](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/7452e235-ea7e-465a-b196-f6341a633714)
 
     
-We start by implementing the following C code.
+We start by implementing the following C and assembly code with risc-v compiler.
 
+We execute the code using RISC-V Spike simulator.
+
+For compilation we use the following command:
+
+```
+riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o <filename.o> <filename.c> <assembly_filename.S>
+```
+
+To get output using RISC-V Spike Simulator, the command used is:
+
+```
+spike pk <filename.o>
+```
 ```
 #include <stdio.h>
 
@@ -297,8 +310,24 @@ int main(){
   printf("Sum of numbers 0 to %d is %d ", count, result);
 }
 ```
+```
+.section .text
+.global load
+.type load, @function
 
-![program_10](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/3ed5f6f4-ea8f-49d9-bcbc-5ab4cd754bbc)
+load:
+      add a4, a0, zero
+      add a2, a0, a1
+      add a3, a3, zero
+loop: add a3, a3, a4
+      adddi a3, a3, 1
+      blt a3, a2, loop
+      add a0, a4, zero
+      ret
+```
+
+
+![program-11](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/61b3ac31-1d2d-4b10-8cc4-ee1cc07995da)
 
 
   
