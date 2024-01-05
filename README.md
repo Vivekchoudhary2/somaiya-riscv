@@ -220,9 +220,44 @@ To find the negative number: We do so through 2's complement method
 
   *  For e.g- In a 32-bit unsigned integer, you might have values ranging from 0 to 4,294,967,295
 
+The highest integer number in 64-bit OS that can be obtained is 1,84,46,74,40,73,70,95,51,615.
+*  How?
+    *  The highest number is obtained when all the bits in 64-bit sequence are set to 1. The decimal equivalent turns out to be (2^(64)-1) = 1,84,46,74,40,73,70,95,51,615
+ 
+      The following exapmle demonstrates the idea:
+
+We implement the following C code:
+
+```
+#inlcude <stdio.h>
+#include <math.h>
+int main()
+{
+  unsigned long long int max = (unsigned long long int) (pow(2,64)-1);
+  printf("Highest number represented by unsigned long long int is %llu\n", max);
+  return 0;
+}
+```     
+
+We compile the code using RISC-V compiler. The command for that is:
+``` riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o <filename.o> <filename.c> ```
+
+And to get the result using Spike simulator:
+
+``` spike pk <filename.o> ```
+
+![program-15](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/fe8bbc5a-8d36-4344-b562-e3174ac0cd3e)
 
 
 
+On increasing the exponent value (number of bit), we get the following result:
+
+
+![program-16](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/7bda31b3-6991-4f95-ba4b-15ac6416479a)
+
+The result is same as the is OS is 64-bit.
+
+Hence, 1,84,46,74,40,73,70,95,51,615 is the maximum integer value that can be expressed using 64-bit system.
 
 
     
