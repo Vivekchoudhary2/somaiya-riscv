@@ -23,6 +23,44 @@ https://www.virtualbox.org/wiki/Downloads
 
 ![setup_1](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/3e7c71ad-2df4-4869-b790-23a8582c1084)
 
+Steps to install Risc-tools (linux)
+
+```
+sudo apt install libboost-all-dev
+git clone https://github.com/kunalg123/riscv_workshop_collaterals.git
+cd riscv_workshop_collaterals
+chmod +x run.sh
+./run.sh
+
+```
+
+ Once you run it you will get make error. ignore it  and type the following command
+
+ ```
+
+cd ~/riscv_toolchain/iverilog/
+git checkout --track -b v10-branch origin/v10-branch
+git pull 
+chmod 777 autoconf.sh 
+./autoconf.sh 
+./configure 
+make
+sudo make install
+
+```
+
+- To set the PATH variable
+
+```
+
+sudo nano .bashrc
+#Type the below line at very last and change the username accordingly
+
+export PATH="/home/Alwin/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin:$PATH"
+
+# close the bashrc while saving the changes implemented
+```
+
 </details>
 
 <details>
