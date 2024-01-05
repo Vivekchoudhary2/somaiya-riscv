@@ -56,13 +56,13 @@ https://www.virtualbox.org/wiki/Downloads
 #include <stdio.h>
 int main()
 {
-  int n=5, y=0, i;
+  int n=10, y=0, i;
 
   for (i=0; i<=n; i++)
   {
     y = y + i;
   }
-  printf("Required sum is: ", y);
+  printf("Required sum is: %d\n", y);
   return 0;
 }
   ```
@@ -119,7 +119,41 @@ If we were try to figure out number of instructions, it turns out to be
 ```
 (10204 - 10184)/4 = 20 instructions
 ```
+Now, to compile and get result of any program implemented in C; the commands used are:
 
+```
+gcc filename.c
+./a.out
+```
+We try to do the same process, but this time using RISC-V compiler. 
+
+The commands that help us achieve that are:
+
+```
+# For compilation
+riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o <filename.o> <filename.c>
+# For output
+spike pk <filename.o>
+```
+
+![program-13](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/db5f7997-ce91-4ad7-9408-709d8ffc7422)
+
+For interactive debugging, command used is:
+
+```
+spike -d pk <filename.o>
+```
+As an example shown below, the real-time execution and data updation can be monitored
+
+The command ``` until pc 0 10194``` points the program counter to given address(in this case: 10194). The instruction at that address is still to be executed; it is only executed after we press 'Enter' key.
+The data is accordingly udpated.
+
+Now to view the data, the following command used is ``` reg 0 a5 ``` where 'a5' is the ABI name of the register we want to monitor.
+
+
+In the exapmple shown below, the decimal 10 is loaded into 'a5' register as hexadecimal value(000000000000000a) as soon as the command ``` li a5, 10 ``` is executed.
+
+![program-14](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/056af35f-8823-46c1-90db-feee7e3b7fef)
 
 
 
