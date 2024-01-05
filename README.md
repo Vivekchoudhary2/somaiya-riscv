@@ -119,7 +119,10 @@ If we were try to figure out number of instructions, it turns out to be
 ```
 (10204 - 10184)/4 = 20 instructions
 ```
-  
+
+
+
+
 </details>
 
 <details>
@@ -328,6 +331,13 @@ loop: add a3, a3, a4
 
 
 ![program-11](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/61b3ac31-1d2d-4b10-8cc4-ee1cc07995da)
+
+The 'main' function being executed in RISC-V assembly language.
+
+
+![program-12](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/de08fce9-21a4-4f87-a4fe-ebb09c373539)
+
+
 
 
   
