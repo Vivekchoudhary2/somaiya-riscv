@@ -224,7 +224,7 @@ The highest unsigned integer number in 64-bit OS that can be obtained is 1,84,46
 *  How?
     *  The highest number is obtained when all the bits in 64-bit sequence are set to 1. The decimal equivalent turns out to be (2^(64)-1) = 1,84,46,74,40,73,70,95,51,615
  
-      The following exapmle demonstrates the idea:
+The following exapmle demonstrates the idea:
 
 We implement the following C code:
 
@@ -240,6 +240,7 @@ int main()
 ```     
 
 We compile the code using RISC-V compiler. The command for that is:
+
 ``` riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o <filename.o> <filename.c> ```
 
 And to get the result using Spike simulator:
@@ -278,6 +279,11 @@ Hence, 1,84,46,74,40,73,70,95,51,615 is the maximum unsigned integer value that 
       *  Results:
  
   ![program 17](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/41f46020-ea0b-48ff-bc97-72291f88559f)
+
+  Some useful datatypes:
+
+  ![program-20](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/4aeb8d46-34cc-450c-b19e-6946cecaeb2d)
+
 
 </details>
 
