@@ -26,6 +26,7 @@ https://www.virtualbox.org/wiki/Downloads
 Steps to install Risc-tools (linux)
 
 ```
+cd /home/vsduser/Desktop
 sudo apt install libboost-all-dev
 git clone https://github.com/kunalg123/riscv_workshop_collaterals.git
 cd riscv_workshop_collaterals
@@ -52,7 +53,6 @@ sudo make install
 - To set the PATH variable
 
 ```
-
 sudo nano .bashrc
 #Type the below line at very last and change the username accordingly
 
