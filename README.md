@@ -4,6 +4,8 @@
 
 - [Day 2-Introduction to Application Binary Interface And Basic Error Flow](#Day2--Introduction-to-Application-Binary-Interface-And-Basic-error-flow)
 
+- [Day 3-Setting up Platform IDE](#Day3--Setting-up-Platform-IDE)
+
 
 # Day 1- Introduction to RISC-V ISA And GNU compiler toolchain
 <details>
@@ -498,9 +500,24 @@ The 'main' function being executed in RISC-V assembly language.
 
 ![program-12](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/de08fce9-21a4-4f87-a4fe-ebb09c373539)
 
-
-
-
   
 </details>
+
+# Day-3 Setting up PlatformIO IDE
+<detail>
+  <summary> VSDSquadron Development Environment Installation Guide </summary>
+
+## Install VSCode
+
+Download and install VSCode from [https://code.visualstudio.com/](https://code.visualstudio.com/).
+
+## Install PlatformIO
+
+1. Open the "Extensions" sidebar in VSCode.
+2. Search for "PlatformIO" and click "install".
+
+
+
+
+</detail>
 
