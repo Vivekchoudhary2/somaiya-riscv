@@ -521,6 +521,8 @@ The 'main' function being executed in RISC-V assembly language.
   ## Install CH32V Platform
 
 1. Expand the PlatformIO sidebar (ant icon) and click "PIO Home".
+
+
 ![program-22](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/07325c6e-8acb-4ad8-93ab-820b4777820c)
 
 
@@ -548,5 +550,15 @@ The VSDSQUADRON platform should now be successfully installed.
 - click on vsdsquadron
 
 
+![program-24](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/fa34d549-8cc1-4685-94c0-bad400753d37)
+
+- click on Examples
+- click on import
+
+
+
+![program-25](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/7124c60c-337e-424e-9315-d8c7660477c4)
+
+The platform is now ready to be used.
 
 </details>
