@@ -529,9 +529,23 @@ The 'main' function being executed in RISC-V assembly language.
 ![program-23](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/95fef7e2-00e4-4782-a109-621969e785e7)
 
 
+Now, to install files through github on VSCode, it must first have the git extension; otherwise it gives warning of absence of git-extension
+The git extension can be found with help of following link
+
+> https://git-scm.com/downloads
+
+Run the installer with default settings.
+
 3.Enter the following repository URL when prompted and press "Install".
 
 > [https://github.com/yathAg/vsdsquadron_pio.git](https://github.com/yathAg/vsdsquadron_pio.git)
+
+The VSDSQUADRON platform should now be successfully installed.
+
+## Uploading blink example
+
+- Click on platforms
+- click on vsdsquadron
 
 
 
