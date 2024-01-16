@@ -504,20 +504,35 @@ The 'main' function being executed in RISC-V assembly language.
 </details>
 
 # Day-3 Setting up PlatformIO IDE
-<detail>
-  <summary> VSDSquadron Development Environment Installation Guide </summary>
+<details>
+ <summary> VSDSquadron Development Environment Installation Guide </summary>
 
-## Install VSCode
+  ## Install VSCode
 
-Download and install VSCode from [https://code.visualstudio.com/](https://code.visualstudio.com/).
+  Download and install VSCode from [https://code.visualstudio.com/](https://code.visualstudio.com/).
 
-## Install PlatformIO
+  ## Install PlatformIO
 
-1. Open the "Extensions" sidebar in VSCode.
-2. Search for "PlatformIO" and click "install".
+  1. Open the "Extensions" sidebar in VSCode.
+  2. Search for "PlatformIO" and click "install".
+
+  ![program-21](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/380e61b4-a63b-4926-92cb-bc1a63d72fde)
+
+  ## Install CH32V Platform
+
+1. Expand the PlatformIO sidebar (ant icon) and click "PIO Home".
+![program-22](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/07325c6e-8acb-4ad8-93ab-820b4777820c)
+
+
+2.In the PIO Home window, click on the "Platforms" sidebar and choose “Advanced Installation”.
+
+![program-23](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/95fef7e2-00e4-4782-a109-621969e785e7)
+
+
+3.Enter the following repository URL when prompted and press "Install".
+
+> [https://github.com/yathAg/vsdsquadron_pio.git](https://github.com/yathAg/vsdsquadron_pio.git)
 
 
 
-
-</detail>
-
+</details>
