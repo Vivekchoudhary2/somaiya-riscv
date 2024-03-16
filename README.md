@@ -6,9 +6,9 @@
 
 - [Day 3-Setting up Platform IDE](#Day3--Setting-up-Platform-IDE)
 
-- [Day 4-Implementing basic functions of input & output](#Day4--Implementing-basic-functions-of-input-and-output)
+- [Day 4-Implementation of basic functions of input & output](#Day4--Implementing-basic-functions-of-input-and-output)
 
-- [Day 5-Implementing 2-bit array multiplier](#Day5--Implementing-2-bit-array-multiplier)
+- [Day 5-Implementation of 2-bit array multiplier](#Day5--Implementing-2-bit-array-multiplier)
 
 
 # Day 1- Introduction to RISC-V ISA And GNU compiler toolchain
@@ -650,7 +650,13 @@ GPIO_WriteBit(GPIOD, GPIO_Pin_0, SET); //Set Output Pin
 # References
 <summary>(https://vsdiat.com/)</summary>
 
+<summary>(https://www.wch-ic.com/products/CH32V003.html)</summary>
+
+<summary>(https://www.youtube.com/watch?v=S3oZ3S9tHoU)</summary>
+
 <summary>(https://github.com/alwinshaju08/RISCV/blob/main/README.md)</summary>
+
+<summary>(https://pallavaggarwal.medium.com/ch32v003-programming-tutorial-be0145590fe8)</summary>
 
 <summary>(https://pallavaggarwal.in/2023/10/01/ch32v003-low-cost-mcu-programming/)</summary>
 
