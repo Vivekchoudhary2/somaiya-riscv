@@ -790,6 +790,8 @@ Output: P0, P1, P2, P3
 
 <summary>(https://www.wch-ic.com/products/CH32V003.html)</summary>
 
+<summary>https://www.youtube.com/watch?v=sPvMXGFTC2U</summary>
+
 <summary>(https://www.youtube.com/watch?v=zZUtTplVHwE)</summary>
 
 <summary>(https://www.youtube.com/watch?v=S3oZ3S9tHoU)</summary>
