@@ -6,7 +6,7 @@
 
 - [Day 3-Setting up Platform IDE](#Day3--Setting-up-Platform-IDE)
 
-- [Day 4-Implementing basic functions of input & output](#Day4--Implementing basic functions of input & output)
+- [Day 4-Implementing basic functions of input & output](#Day4--Implementing-basic-functions-of-input-and-output)
 
 
 # Day 1- Introduction to RISC-V ISA And GNU compiler toolchain
