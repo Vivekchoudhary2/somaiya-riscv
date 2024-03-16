@@ -8,6 +8,8 @@
 
 - [Day 4-Implementing basic functions of input & output](#Day4--Implementing-basic-functions-of-input-and-output)
 
+- [Day 5-Implementing 2-bit array multiplier](#Day5--Implementing-2-bit-array-multiplier)
+
 
 # Day 1- Introduction to RISC-V ISA And GNU compiler toolchain
 <details>
@@ -644,3 +646,18 @@ GPIO_WriteBit(GPIOD, GPIO_Pin_0, SET); //Set Output Pin
 	<summary>Implementation video</summary>
 		(https://drive.google.com/file/d/1JeMlfQFkYJ_VlXxBGRq7TP8nSrtVv1xa/view?usp=drive_link)
 </details>
+
+# References
+<summary>(https://vsdiat.com/)</summary>
+
+<summary>(https://github.com/alwinshaju08/RISCV/blob/main/README.md)</summary>
+
+<summary>(https://pallavaggarwal.in/2023/10/01/ch32v003-low-cost-mcu-programming/)</summary>
+
+<summary>(https://pallavaggarwal.in/2022/11/09/wch-riscv-microcontroller-ch32v003/)</summary>
+
+<summary>(https://pallavaggarwal.in/2023/09/21/ch32v003-gpio-input-polling-interrupt/)</summary>
+
+<summary>(https://pallavaggarwal.in/2023/09/21/ch32v003-programming-gpio-as-output/)</summary>
+
+<summary>(http://www.mounriver.com/)</summary>
