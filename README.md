@@ -647,6 +647,15 @@ GPIO_WriteBit(GPIOD, GPIO_Pin_0, SET); //Set Output Pin
 <details>
 	<summary>Implementation video</summary>
 		(https://drive.google.com/file/d/1JeMlfQFkYJ_VlXxBGRq7TP8nSrtVv1xa/view?usp=drive_link)
+
+ ```2-bit array multiplier
+
+From Right to Left;
+
+Input: A0, A1, B0, B1
+
+Output: P0, P1, P2, P3
+```
 </details>
 
 # References
