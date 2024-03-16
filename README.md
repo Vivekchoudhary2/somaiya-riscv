@@ -764,6 +764,8 @@ int main(void)
     }
 }
 ```
+
+Following the above code, anyone can easily implement a 2-bit array multiplier.
 </details>
 <details>
 	<summary>Project report</summary>
