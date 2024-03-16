@@ -562,3 +562,74 @@ The VSDSQUADRON platform should now be successfully installed.
 The platform is now ready to be used.
 
 </details>
+
+# Day-4 Implementing basic functions of input & output
+<details>
+ <summary>How to write a Basic code </summary>
+
+ 1. Include Header Files:
+	
+```
+#include <ch32v00x.h>
+#include <debug.h>
+```
+2. Pin Configurations:
+
+```
+void GPIO_Config(void)
+{
+GPIO_InitTypeDef GPIO_InitStructure = {0}; //structure variable used for the GPIO configuration
+RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE); // to Enable the clock for Port D
+}
+```
+
+Input Pin Definition:
+```
+GPIO_InitStructure.GPIO_Pin = GPIO_Pin_X | GPIO_Pin_Y | GPIO_Pin_Z ; // Defines which Pin to
+configure
+GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+GPIO_Init(GPIOD, &GPIO_InitStructure);
+```
+
+Output Pin Definition:
+```
+GPIO_InitStructure.GPIO_Pin = GPIO_Pin_X | GPIO_Pin_Y | GPIO_Pin_Z ; // Defines which Pin to
+configure
+GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; // Defines Output Type
+GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; // Defines speed
+GPIO_Init(GPIOD, &GPIO_InitStructure);
+```
+Pin Description According to the Header File ch32v00x.h
+```
+PD0 => GPIO_Pin_0
+PD1 => GPIO_Pin_1
+PD2 => GPIO_Pin_2
+PD3 => GPIO_Pin_3
+PD4 => GPIO_Pin_4
+PD5 => GPIO_Pin_5
+PD6 => GPIO_Pin_6
+PD7 => GPIO_Pin_7
+```
+3. Main Function:
+```
+int main(void)
+{
+uint8_t b0, b1, b2, g0 , g1, g2 = 0;
+NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+SystemCoreClockUpdate();
+Delay_Init();
+GPIO_Config();
+while(1)
+ {
+
+ }
+}
+```
+5. Input / Output Statements:
+```
+b0 = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4); //Input Statement
+GPIO_WriteBit(GPIOD, GPIO_Pin_0, RESET); //Reset Output Pin
+GPIO_WriteBit(GPIOD, GPIO_Pin_0, SET); //Set Output Pin
+```
+</details>
+</details>
