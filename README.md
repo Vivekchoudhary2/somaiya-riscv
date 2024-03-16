@@ -10,6 +10,8 @@
 
 - [Day 5-Implementation of 2-bit array multiplier](#Day5--Implementing-2-bit-array-multiplier)
 
+- [References](#References)
+
 
 # Day 1- Introduction to RISC-V ISA And GNU compiler toolchain
 <details>
