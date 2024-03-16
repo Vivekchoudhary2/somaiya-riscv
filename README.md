@@ -640,6 +640,131 @@ GPIO_WriteBit(GPIOD, GPIO_Pin_0, SET); //Set Output Pin
 </details>
 
 # Day 5- Implementing 2-bit array multiplier
+
+<details>
+	<summary>Project code</summary>
+ 
+We first define the functionality of the used gates with help of bitwise operators provided by the "stdio.h" library of C. Here we have used AND & XOR operation.
+```c
+#include <ch32v00x.h>
+#include <debug.h>
+#include <stdio.h>
+
+/* Defining gate functions */
+int and (int bit1, int bit2)
+{
+    int and = bit1 & bit2;
+    return and;
+}
+
+int xor (int bit1, int bit2)
+{
+    int xor = bit1 ^ bit2;
+    return xor;
+}
+```
+
+Next we start with defining the functionalitites of pin. Since, we are programming a machine; every detail of the goal must be instructed discretely; starting from which port to switch ON to what does a particular pin will behave like.
+
+Given below is the example that illustrates the above point.
+```c
+void GPIO_Config(void)
+{
+    GPIO_InitTypeDef GPIO_InitStructure = {0};
+
+    /* Switching ON port D and simultaneously defining pin functions */
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3 | GPIO_Pin_4;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+    /* Switching ON port C and simultaneously defining pin functions */
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3 | GPIO_Pin_4;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+    GPIO_Init(GPIOC, &GPIO_InitStructure);
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5|GPIO_Pin_2|GPIO_Pin_1;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
+    GPIO_Init(GPIOC, &GPIO_InitStructure);
+}
+```
+Next, we execute the 'main' function, wherein the variables(datatype: uint8_t is for unsigned 8-bit integer) are declared. The core execution takes place in this cell. 
+```c
+int main(void)
+{
+    uint8_t a, b0, b1, b, d, a0, a1, x, e,g ,f, v = 0;  /* Declaring variables */
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    SystemCoreClockUpdate();
+    Delay_Init();
+    GPIO_Config();
+
+
+    while (1)
+    {
+        a0 = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_3);  /* Reading input values for pin D3, D4, C3, C4 */
+        a1 = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4);
+        b0 = GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_3);
+        b1 = GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_4);
+
+        a = and(a0,b0); /* C0 */
+        b = and(a0,b1); 
+        d = and(a1,b0);
+        x = xor(b,d);   /* C1 */
+        e = and(a1,b1);
+        g = and(b,d);
+        f = xor(e,g);   /* C2 */
+        v = and(e,g);   /* C3 */
+        
+        /* P0 */
+        if(a==1)
+        {
+            GPIO_WriteBit(GPIOD,GPIO_Pin_2,SET);
+        }
+        else
+        {
+            GPIO_WriteBit(GPIOD,GPIO_Pin_2,RESET);
+        }
+
+        /* P1 */
+        if(x==1)
+        {
+            GPIO_WriteBit(GPIOC,GPIO_Pin_1,SET);
+        }
+        else
+        {
+            GPIO_WriteBit(GPIOC,GPIO_Pin_1,RESET);
+        }
+
+        /* P2 */
+        if(f==1)
+        {
+            GPIO_WriteBit(GPIOC,GPIO_Pin_2,SET);
+        }
+        else
+        {
+            GPIO_WriteBit(GPIOC,GPIO_Pin_2,RESET);
+        }
+
+        /* P3 */
+        if(v==1)
+        {
+            GPIO_WriteBit(GPIOC,GPIO_Pin_5,SET);
+        }
+        else
+        {
+            GPIO_WriteBit(GPIOC,GPIO_Pin_5,RESET);
+        }
+    }
+}
+```
+</details>
 <details>
 	<summary>Project report</summary>
 		(https://drive.google.com/file/d/1FeMuWhDoe-iyqMA1rNgYxU5zoSzB0ILD/view?usp=drive_link)
@@ -662,6 +787,8 @@ Output: P0, P1, P2, P3
 <summary>(https://vsdiat.com/)</summary>
 
 <summary>(https://www.wch-ic.com/products/CH32V003.html)</summary>
+
+<summary>(https://www.youtube.com/watch?v=zZUtTplVHwE)</summary>
 
 <summary>(https://www.youtube.com/watch?v=S3oZ3S9tHoU)</summary>
 
