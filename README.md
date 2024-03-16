@@ -6,6 +6,8 @@
 
 - [Day 3-Setting up Platform IDE](#Day3--Setting-up-Platform-IDE)
 
+- [Day 4-Implementing basic functions of input & output](#Day4--Implementing basic functions of input & output)
+
 
 # Day 1- Introduction to RISC-V ISA And GNU compiler toolchain
 <details>
@@ -631,5 +633,4 @@ b0 = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4); //Input Statement
 GPIO_WriteBit(GPIOD, GPIO_Pin_0, RESET); //Reset Output Pin
 GPIO_WriteBit(GPIOD, GPIO_Pin_0, SET); //Set Output Pin
 ```
-</details>
 </details>
