@@ -634,3 +634,13 @@ GPIO_WriteBit(GPIOD, GPIO_Pin_0, RESET); //Reset Output Pin
 GPIO_WriteBit(GPIOD, GPIO_Pin_0, SET); //Set Output Pin
 ```
 </details>
+
+# Day 5- Implementing 2-bit array multiplier
+<details>
+	<summary>Project report</summary>
+		(https://drive.google.com/file/d/1FeMuWhDoe-iyqMA1rNgYxU5zoSzB0ILD/view?usp=drive_link)
+</details>
+<details>
+	<summary>Implementation video</summary>
+		(https://drive.google.com/file/d/1JeMlfQFkYJ_VlXxBGRq7TP8nSrtVv1xa/view?usp=drive_link)
+</details>
